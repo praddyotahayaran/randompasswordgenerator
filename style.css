@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    padding-bottom: 9px;
+}
+
+.passwordConatiner {
+    width: 550px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #34B3F1;
+    border-radius: 5px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .3);
+}
+
+.weakPassword {
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    display: flex;
+    height: 45px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.weakPassword input {
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background: transparent;
+}
+
+.strongPassword {
+    height: 45px;
+    margin-bottom: 10px;
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.strongPassword input {
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background: transparent;
+}
+
+.superStrongPassword {
+    height: 45px;
+    margin-bottom: 10px;
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.superStrongPassword input {
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background: transparent;
+}
+
+.fa-copy {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    background: #ECE5C7;
+    /* color: white; */
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+.btn:active{
+    transform: scale(.96);
+}
+
+.alertContainer{
+    position: fixed;
+    bottom: 30px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    transition: 0.7s;
+}
+
+.active.alertContainer{
+    bottom: -200px;
+}

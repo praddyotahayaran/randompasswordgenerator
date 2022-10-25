@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Gernerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="passwordConatiner">
+        <h1>RANDOM PASSWORD GENERATOR</h1>
+        <div class="weakPassword">
+            <input type="text" id="weakPassword" placeholder="Weak Password" readonly>
+            <i id="copy" class="fa-regular fa-copy"></i>
+        </div>
+
+        <div class="strongPassword">
+            <input type="text" id="strongPassword" placeholder="Strong Password" readonly>
+            <i id="copy1" class="fa-regular fa-copy"></i>
+        </div>
+
+        <div class="superStrongPassword">
+            <input type="text" id="superStrongPassword" placeholder="Super Strong Password" readonly>
+            <i id="copy2" class="fa-regular fa-copy"></i>
+        </div>
+
+        <button class="btn">Create Password</button>
+    </div>
+
+    <div class="alertContainer active">
+        Password Copied
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/c5a8eda2bd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
