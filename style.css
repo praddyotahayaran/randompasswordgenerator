@@ -123,3 +123,11 @@ h1{
 .active.alertContainer{
     bottom: -200px;
 }
+
+@media only screen and (max-width: 570px) {
+    .passwordConatiner{
+        text-align: center;
+        width: 400px;
+        height: 350px;
+    }
+}
