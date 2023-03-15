@@ -9,6 +9,7 @@
 
 body {
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +20,7 @@ h1{
 }
 
 .passwordConatiner {
+    margin: 2rem 0;
     width: 550px;
     height: 300px;
     display: flex;
@@ -100,13 +102,8 @@ h1{
     outline: none;
     border: none;
     background: #ECE5C7;
-    /* color: white; */
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-}
-
-.btn:active{
-    transform: scale(.96);
 }
 
 .alertContainer{
@@ -124,11 +121,14 @@ h1{
     bottom: -200px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
     .passwordConatiner{
         text-align: center;
-        width: 400px;
+        width: 20rem;
         height: 350px;
-        margin-left: 34px;
     }
+    .passwordConatiner>* {
+        transform: scale(.7);
+    }
+
 }
